@@ -20,6 +20,26 @@ public class ProfilePage {
 	@FindBy(xpath = "//button[@type='submit' and contains(text(),'save')]")
 	private WebElement savebtn;
 	
+	public void selectProfile()
+	{
+		profileicon.click();
+		profilelink.click();
+		}
+	public String geteEmail()
+	{
+		String email = emailtb.getText();
+		return email;
+	}
+	public void mobiletb(String mobilenumber)
+	{
+		mobiletb.clear();
+		mobiletb.sendKeys(mobilenumber);
+	}
+	public void savebtnClick()
+	{
+		savebtn.click();
+	}
+	
 	
 	
 

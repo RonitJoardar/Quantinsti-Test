@@ -14,6 +14,18 @@ public class MyServicesPage {
 	@FindBy(xpath = "//button[text()='enroll']")
 	private WebElement epatbtn;
 	
+	public void myServicesClick()
+	{
+		myservices.click();
+	}
+	public void quantraLaunchBtnClick()
+	{
+		quantralaunchbtn.click();
+	}
+	public void epatBtnClick()
+	{
+		epatbtn.click();
+	}
 	
 
 }
